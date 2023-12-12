@@ -22,8 +22,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SecondLevel"
-            android:label="Second Level of the game" />
+            android:name=".Level01"
+            android:label="First level of the game" />
     </application>
 
 </manifest>

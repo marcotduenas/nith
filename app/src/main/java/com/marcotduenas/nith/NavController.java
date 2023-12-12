@@ -19,12 +19,19 @@ public class NavController {
         return this.userAnswer;
     }
 
-    public void goToAnotherLevel(String answer) {
+    public void goToAnotherLevel(String sentAnswer) {
+        switch (sentAnswer) {
+            case "yes":
+                Intent intent = new Intent(context, Level01.class);
+                context.startActivity(intent);
+        }
+        /*
         if("teste".equals(answer)){
         Intent intent = new Intent(context, SecondLevel.class);
         context.startActivity(intent);
         }else {
             ;
         }
+         */
     }
 }
