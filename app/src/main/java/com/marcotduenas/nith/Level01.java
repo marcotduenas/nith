@@ -15,14 +15,14 @@ public class Level01 extends AppCompatActivity {
        NavController navControllerForLevel01 = new NavController(this);
        EditText userInputtedAnswer = findViewById(R.id.inputCode);
        Button enterCodeButton = findViewById(R.id.codeButton);
+       final String NEXT_CLASS_LEVEL;
 
        enterCodeButton.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
                String literalUserAnswerValue = userInputtedAnswer.getText().toString();
                navControllerForLevel01.saveUserAnswer(literalUserAnswerValue);
-               navControllerForLevel01.controllerLevel01(navControllerForLevel01.getUserAnswer());
-               System.out.println(navControllerForLevel01.getUserAnswer());
+               navControllerForLevel01.answerControllerForLevel01(navControllerForLevel01.getUserAnswer(), MainActivity.class);
            }
        });
 

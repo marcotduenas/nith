@@ -2,17 +2,16 @@ package com.marcotduenas.nith;
 
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
+
+import java.util.Arrays;
 
 import io.github.cdimascio.dotenv.Dotenv;
 
-public class NavController{
-
-    Dotenv listOfAnswers = Dotenv.configure().directory("./").filename("env").load();
+public class NavController extends AnswersConfig{
 
     private Context context;
     private String userInputedAnswer;
-
+    AnswersConfig finalAnswers = new AnswersConfig();
 
     public NavController(Context context){
         this.context = context;
@@ -26,13 +25,6 @@ public class NavController{
         return this.userInputedAnswer;
     }
 
-    public void goToAnotherLevel(Class nextLevelClassName) {
-        Intent intent = new Intent(context, nextLevelClassName);
-        context.startActivity(intent);
-    }
-
-
-
     /*
     I've create controllerLevel01 because the game will have no save
     system, so, the first level will be like a guide to another levels.
@@ -41,12 +33,20 @@ public class NavController{
     level of the game.
      */
 
-
-    public void controllerLevel01(String valueOfUserAnswer){
-        if (valueOfUserAnswer.equals(listOfAnswers.get("ANSWER_LEVEL_01"))) {
-            Intent intent = new Intent(context, MainActivity.class);
+    public void answerControllerForLevel01(String userAnswer, Class nextLevel) {
+        /*
+        for (int i = 0; i < correctAnswers.length; i++) {
+                if (userAnswer.equals(correctAnswers[i])) {
+                    Intent intent = new Intent(context, nextLevel);
+                    context.startActivity(intent);
+                    break;
+                }
+            }
+        }
+         */
+        if (Arrays.asList(correctAnswers).contains(userAnswer)) {
+            Intent intent = new Intent(context, nextLevel);
             context.startActivity(intent);
-            System.out.println("FUNCAO CHAMADA");
         }
     }
 }
