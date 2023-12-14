@@ -23,7 +23,12 @@
         </activity>
         <activity
             android:name=".Level01"
-            android:label="First level of the game" />
+            android:label="First level of the game"
+       />
+        <activity
+            android:name=".Level02"
+            android:label="Seconde level of the game"/>
+
     </application>
 
 </manifest>
