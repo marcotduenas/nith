@@ -12,7 +12,6 @@ public class Level01 extends AppCompatActivity {
        super.onCreate(savedInstancesState);
        setContentView(R.layout.level_01);
 
-       NavController navControllerForLevel01 = new NavController();
        AnswersConfig levelChecker = new AnswersConfig(this);
        EditText userInputtedAnswer = findViewById(R.id.inputCode);
        Button enterCodeButton = findViewById(R.id.codeButton);
@@ -25,8 +24,7 @@ public class Level01 extends AppCompatActivity {
                literalUserAnswerValue was created to get the value of the string written in
                the EditText field
                */
-               navControllerForLevel01.saveUserAnswer(literalUserAnswerValue);
-               levelChecker.correctAnswersList(navControllerForLevel01.getUserAnswer());
+               levelChecker.correctAnswersList(literalUserAnswerValue);
            }
        });
 

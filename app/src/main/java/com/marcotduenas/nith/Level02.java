@@ -14,7 +14,6 @@ public class Level02 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.level_02);
 
-        NavController navControllerLevel02 = new NavController();
         AnswersConfig levelChecker = new AnswersConfig(this);
         EditText userInputtedAnswer = findViewById(R.id.inputCode);
         Button enterCodeButton = findViewById(R.id.codeButton);
@@ -22,9 +21,8 @@ public class Level02 extends AppCompatActivity {
         enterCodeButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                String literalUserAnswerValuer = userInputtedAnswer.getText().toString();
-                navControllerLevel02.saveUserAnswer(literalUserAnswerValuer);
-                levelChecker.correctAnswersList(navControllerLevel02.getUserAnswer());
+                String literalUserAnswerValue = userInputtedAnswer.getText().toString();
+                levelChecker.correctAnswersList(literalUserAnswerValue);
             }
 
         });

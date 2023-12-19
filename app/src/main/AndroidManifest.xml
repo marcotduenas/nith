@@ -29,6 +29,10 @@
             android:name=".Level02"
             android:label="Seconde level of the game"/>
 
+        <activity
+            android:name=".Level03"
+            android:label="Seconde level of the game"/>
+
     </application>
 
 </manifest>
