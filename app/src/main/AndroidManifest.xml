@@ -27,11 +27,20 @@
        />
         <activity
             android:name=".Level02"
-            android:label="Seconde level of the game"/>
+            android:label="Second level of the game"/>
 
         <activity
             android:name=".Level03"
-            android:label="Seconde level of the game"/>
+            android:label="Third level of the game"/>
+
+        <activity
+            android:name=".Level04"
+            android:label="Fourth level of the game"/>
+
+        <activity
+            android:name=".Level05"
+            android:label="Fifth level of the game"/>
+
 
     </application>
 
