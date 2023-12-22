@@ -41,6 +41,10 @@
             android:name=".Level05"
             android:label="Fifth level of the game"/>
 
+        <activity
+            android:name=".Level06"
+            android:label="Sixth level of the game"/>
+
 
     </application>
 
