@@ -1,5 +1,7 @@
 # Nith
 
+![]{./app/src/main/res/drawable/game_logo.png}
+
 Inspired by NotPron and Do Not Believe His Lies (DNBHL), I decided to create this game as a way to apply
 the knowledge I gained from studying Java and Mobile Development (I even taught a class about it in high school).
 
