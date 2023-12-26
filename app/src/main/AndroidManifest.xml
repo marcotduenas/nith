@@ -53,6 +53,10 @@
             android:name=".Level08"
             android:label="Eighth level of the game"/>
 
+        <activity
+            android:name=".Level09"
+            android:label="Ninth level of the game"/>
+
     </application>
 
 </manifest>
