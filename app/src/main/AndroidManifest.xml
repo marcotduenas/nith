@@ -57,6 +57,14 @@
             android:name=".Level09"
             android:label="Ninth level of the game"/>
 
+        <activity
+            android:name=".Level10"
+            android:label="Tenth level of the game"/>
+
+        <activity
+            android:name=".Ending"
+            android:label="It's over"/>
+
     </application>
 
 </manifest>

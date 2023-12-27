@@ -23,7 +23,8 @@ public class AnswersConfig {
         nextLevelClass.put("superman", Level07.class);
         nextLevelClass.put("passau", Level08.class);
         nextLevelClass.put("salvador", Level09.class);
-        nextLevelClass.put("chainsaw", MainActivity.class);
+        nextLevelClass.put("chainsaw", Level10.class);
+        nextLevelClass.put("orbits", Ending.class);
 
         Class isThereNextLevel = nextLevelClass.get(sentAnswer);
 
