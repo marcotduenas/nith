@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/helvetica"
         android:padding="15dp"
-        android:text="Maybe you should print this image"
+        android:text="Look closer"
         android:textAlignment="center"
         android:textColor="#F8F8F8"
         android:textSize="18dp"
